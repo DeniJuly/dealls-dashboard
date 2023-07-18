@@ -14,7 +14,7 @@ const FilterBrandCategory = ({
 }: Props) => {
   return (
     <div className="flex w-full lg:w-fit">
-      <div className="w-full lg:max-w-[180px]">
+      <div className="w-full lg:w-[180px]">
         <label
           htmlFor="category"
           className="block mb-2 text-sm font-medium text-black"
@@ -34,7 +34,7 @@ const FilterBrandCategory = ({
           ))}
         </select>
       </div>
-      <div className="w-full lg:max-w-[180px]">
+      <div className="w-full lg:w-[180px]">
         <label
           htmlFor="brand"
           className="block mb-2 text-sm font-medium text-black"

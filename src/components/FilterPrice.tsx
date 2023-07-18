@@ -8,7 +8,7 @@ interface Props {
 const FilterPrice = ({ handleChange, max, min }: Props) => {
   return (
     <div className="flex w-full lg:w-fit">
-      <div className="w-full lg:max-w-[180px]">
+      <div className="w-full lg:w-[180px]">
         <label
           htmlFor="min"
           className="block mb-2 text-sm font-medium text-black"
@@ -25,7 +25,7 @@ const FilterPrice = ({ handleChange, max, min }: Props) => {
           placeholder="ex: $0"
         />
       </div>
-      <div className="w-full lg:max-w-[180px]">
+      <div className="w-full lg:w-[180px]">
         <label
           htmlFor="max"
           className="block mb-2 text-sm font-medium text-black"

@@ -20,3 +20,30 @@ export type ProductType = {
   thumbnail: string;
   images: string[];
 };
+
+export type CartType = {
+  id: number;
+  products: ProductCartType[];
+  total: number;
+  discountedTotal: number;
+  userId: number;
+  totalProducts: number;
+  totalQuantity: number;
+};
+
+export type ProductCartType = {
+  id: number;
+  title: string;
+  price: number;
+  quantity: number;
+  total: number;
+  discountPercentage: number;
+  discountedPrice: number;
+};
+
+export type UserType = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  maidenName: string;
+};

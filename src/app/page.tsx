@@ -3,10 +3,16 @@ import { FilterBrandCategory, Pagination } from "@/components";
 import FilterPrice from "@/components/FilterPrice";
 import Search from "@/components/Search";
 import { ProductType } from "@/types";
-import { formatRupiah } from "@/utils/formatNumber";
+import { formatPrice } from "@/utils/formatNumber";
+import { Metadata } from "next";
 import { ChangeEventHandler, useEffect, useState } from "react";
 
 import React from "react";
+
+const metadata: Metadata = {
+  title: "Dealls | Products",
+  description: "Products page of Dealls Dashboard",
+};
 
 const itemsPerPage = 10;
 const Home = () => {
@@ -168,7 +174,7 @@ const Home = () => {
                     {item.title}
                   </td>
                   <td className="px-6 py-4">{item.brand}</td>
-                  <td className="px-6 py-4">{formatRupiah(item.price)}</td>
+                  <td className="px-6 py-4">{formatPrice(item.price)}</td>
                   <td className="px-6 py-4">{item.stock}</td>
                   <td className="px-6 py-4 capitalize">
                     {item.category?.replaceAll("-", " ")}

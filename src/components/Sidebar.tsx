@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 const Sidebar = () => {
   const { openSidebar } = useContext(SidebarContext);
   const pathname = usePathname();
+  const menu = pathname.split("/")[1];
   return (
     <aside
       id="logo-sidebar"
@@ -21,7 +22,7 @@ const Sidebar = () => {
             <Link
               href="/"
               className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-purple-10 group ${
-                pathname === "/" && "menu-active"
+                menu === "" && "menu-active"
               }`}
             >
               <svg
@@ -48,7 +49,7 @@ const Sidebar = () => {
             <Link
               href="/carts"
               className={`flex items-center p-2 text-gray-900 rounded-lg hover:bg-purple-10 hover:text-purple group ${
-                pathname === "/carts" && "menu-active"
+                menu === "carts" && "menu-active"
               }`}
             >
               <svg
