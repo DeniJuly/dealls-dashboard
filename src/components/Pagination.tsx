@@ -15,7 +15,7 @@ const Pagination = ({ handleNext, handlePrev, page, totalPage }: Props) => {
       <button
         disabled={disabledPrev}
         onClick={handlePrev}
-        className={`flex items-center justify-center px-3 h-8 text-sm font-medium text-grey bg-white border border-grey-70 rounded-md hover:bg-grey-60 ${
+        className={`flex items-center justify-center px-3 h-8 text-sm font-medium text-black bg-white border border-grey-70 rounded-md hover:bg-grey-60 ${
           disabledPrev ? "bg-grey-60 text-gray-300" : ""
         }`}
       >
@@ -36,13 +36,13 @@ const Pagination = ({ handleNext, handlePrev, page, totalPage }: Props) => {
         </svg>
         Previous
       </button>
-      <p className="text-medium text-grey border-grey-70 border rounded-md h-8 text-center px-2 flex items-center">
+      <p className="text-medium text-sm text-black border-grey-70 border rounded-md h-8 text-center px-2 flex items-center">
         {page}/{totalPage}
       </p>
       <button
         disabled={disabledNext}
         onClick={handleNext}
-        className={`flex items-center justify-center px-3 h-8 text-sm font-medium text-grey bg-white border border-grey-70 rounded-md hover:bg-grey-60 ${
+        className={`flex items-center justify-center px-3 h-8 text-sm font-medium text-black bg-white border border-grey-70 rounded-md hover:bg-grey-60 ${
           disabledNext ? "bg-grey-60 text-gray-300" : ""
         }`}
       >
