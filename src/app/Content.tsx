@@ -60,7 +60,7 @@ const Content = () => {
         return checkName && checkBrand && checkCategory && checkPrice;
       })
     );
-  }, [search, brand, price]);
+  }, [search, brand, price, category]);
 
   const handlePrev = () => {
     setPage((pref) => pref - 1);
