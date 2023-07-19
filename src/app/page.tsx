@@ -6,6 +6,9 @@ import Content from "./Content";
 export const metadata: Metadata = {
   title: "Dealls | Products",
   description: "Products page of Dealls Dashboard",
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 const Home = () => {
